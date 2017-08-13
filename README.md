@@ -34,20 +34,120 @@
       compile project(':react-native-firebase-phone-auth')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNFirebasePhoneAuth.sln` in `node_modules/react-native-firebase-phone-auth/windows/RNFirebasePhoneAuth.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Com.Reactlibrary.RNFirebasePhoneAuth;` to the usings at the top of the file
-  - Add `new RNFirebasePhoneAuthPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
-```javascript
-import RNFirebasePhoneAuth from 'react-native-firebase-phone-auth';
 
-// TODO: What to do with the module?
+1. Import DeviceEventEmitter in react-native
+2. Import RNFirebasePhoneAuth from 'react-native-firebase-phone-auth'
+    
+    ```javascript
+    import {
+        //...
+        DeviceEventEmitter,
+    } from 'react-native';
+
+    import RNFirebasePhoneAuth from 'react-native-firebase-phone-auth';
+    ```
+3. (Optional) initialize Firebase
+    ```
+        /*
+            All info appId, projectId, appKey, databaseURL
+            can be found in google-services.json file which you can download
+            from firebase console in the website
+        */
+        RNFirebasePhoneauth.initFirebase(
+            appId, 
+            projectId, 
+            appKey,
+            databaseURL,
+            (resp)=>{ console.log(resp) },
+            (error)=>{
+                //alert(error); console.log(error);
+                },
+        );
+    ```
+4. Add event listener for OTPStatus in componentDidMount
+    ```
+        componentDidMount() {
+             this.initFirebase(); // if needed
+             this.listenToOTP();
+         }
+     
+         listenToOTP(){
+     
+             DeviceEventEmitter.addListener('OTPStatus', (data) => {
+             
+                 switch(data.CODE){
+                    case "SENT":
+                            //SMS Sent
+                        break;
+                    case "VERIFIED":
+                             //SMS Received & read by google play services
+                              let authData = {
+                                  code : data.OTPNumber,
+                                  verificationId : data.verificationId
+                              }
+                              firebase.auth().signInWithPhoneAuth(
+                                 authData, 
+                                 (success)=>{ 
+                                     //on Successful Login
+                                 }, 
+                                 (error)=>{ 
+                                     //on Error 
+                                 });
+                         break;
+                    case "ERROR":
+                            //error sending SMS
+                        break;
+                 }
+     
+                 if(data.CODE == "ERROR")
+                     {
+                     }
+     
+             });
+     
+     
+         }
+    ```
+
+5. Lastly Send OTP to a phoneNumber
+    ```
+        let phoneNumber = "+61412341234";
+        RNFirebasePhoneauth.sendOTP(phoneNumber);
+    ```
+    
+    **That's it!!!**
+    
+// TODO: Android & iOS Firebase link
 RNFirebasePhoneAuth;
-```
+
+
+## Common Issues on Build / Integration
+
+1 : Failed to resolve: com.google.firebase:firebase-core:X.X.X
+
+    follow this link, it worked for me
+    https://stackoverflow.com/questions/37310188/failed-to-resolve-com-google-firebasefirebase-core9-0-0
   
+2 : Did you setup Firebase for Android & iOS properly??
+    
+    https://support.google.com/firebase/answer/7000104?hl=en
+    
+    OR 
+    
+    - ANDROID issue #1 - Add firebase configuration file to the root of the project in android
+        https://support.google.com/firebase/answer/7015592
+
+    - ANDROID issue #2 - build.gradle config did run perfectly with this configuration
+    
+        ```
+        compileSdkVersion 25
+            buildToolsVersion "25.0.2"
+        
+            defaultConfig {
+                applicationId "com.ivu"
+                minSdkVersion 16
+                targetSdkVersion 26
+                
+                
+    2. iOS
