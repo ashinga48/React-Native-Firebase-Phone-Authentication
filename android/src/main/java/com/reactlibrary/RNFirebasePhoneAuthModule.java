@@ -3,7 +3,11 @@ package com.reactlibrary;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.support.annotation.Nullable;
+import android.util.Base64;
 import android.util.Log;
 
 import com.facebook.react.bridge.ActivityEventListener;
@@ -26,6 +30,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.concurrent.TimeUnit;
 
 public class RNFirebasePhoneAuthModule extends ReactContextBaseJavaModule {
@@ -62,16 +68,21 @@ public class RNFirebasePhoneAuthModule extends ReactContextBaseJavaModule {
           Callback errorCallback
   ) {
     try {
+      Log.d("TONUSER","Init FB ");
 
+      /*
       FirebaseOptions options = new FirebaseOptions.Builder()
               .setProjectId(ProjectId)
               .setApplicationId(AppId) // Required for Analytics.
               .setApiKey(APIKey) // Required for Auth.
               .setDatabaseUrl(DatabaseURL) // Required for RTDB.
               .build();
-      FirebaseApp.initializeApp(reactContext.getApplicationContext() /* Context */, options);
+      FirebaseApp.initializeApp(reactContext.getApplicationContext(), options);
+      */
 
-      //Log.d("RESUME", FirebaseApp.getInstance() == null ? "Not initiated" : "Yes initiated");
+      FirebaseApp.initializeApp(reactContext.getApplicationContext());
+      Log.d("TONUSER","Init FB 2");
+//      Log.d("RESUME", FirebaseApp.getInstance() == null ? "Not initiated" : "Yes initiated");
 
       //FirebaseApp.initializeApp(reactContext.getApplicationContext());
 //      mAuth = FirebaseAuth.getInstance();
@@ -80,6 +91,9 @@ public class RNFirebasePhoneAuthModule extends ReactContextBaseJavaModule {
 //      params.putString("user", currentUser != null ? currentUser.getUid() : null);
 //      successCallback.invoke(params);
     } catch (Exception e) {
+
+
+      Log.d("TONUSER","ERROR "+e.getMessage());
       errorCallback.invoke(e.getMessage());
     }
   }
@@ -91,11 +105,45 @@ public class RNFirebasePhoneAuthModule extends ReactContextBaseJavaModule {
   ) {
     try {
 
+
+      String something = "";
+
+      PackageInfo info;
+      try {
+
+        info = reactContext.getApplicationContext().getPackageManager().getPackageInfo(
+                "com.touchon.user", PackageManager.GET_SIGNATURES);
+        for (Signature signature : info.signatures) {
+//          MessageDigest md;
+//          md = MessageDigest.getInstance("SHA");
+//          md.update(signature.toByteArray());
+//          something = new String(Base64.encode(md.digest(), 0));
+//          Log.e("Hash key", something);
+//          System.out.println("Hash key" + something);
+
+          MessageDigest md = MessageDigest.getInstance("SHA");
+          md.update(signature.toByteArray());
+          Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+          something = Base64.encodeToString(md.digest(), Base64.DEFAULT);
+        }
+
+      } catch (PackageManager.NameNotFoundException e1) {
+        Log.e("name not found", e1.toString());
+        something = e1.toString();
+      } catch (NoSuchAlgorithmException e2) {
+        Log.e("no such an algorithm", e2.toString());
+        something = e2.toString();
+      } catch (Exception e3) {
+        Log.e("exception", e3.toString());
+        something = e3.toString();
+      }
+
+
       //FirebaseApp.initializeApp(reactContext.getApplicationContext());
       mAuth = FirebaseAuth.getInstance();
       FirebaseUser currentUser = mAuth.getCurrentUser();
       WritableMap params = Arguments.createMap();
-      params.putString("user", currentUser != null ? currentUser.getUid() : null);
+      params.putString("user", "ATA"+something);
       successCallback.invoke(params);
     } catch (Exception e) {
       errorCallback.invoke(e.getMessage());
@@ -108,6 +156,7 @@ public class RNFirebasePhoneAuthModule extends ReactContextBaseJavaModule {
                       final Callback successCallback,
                       final Callback errorCallback){
 
+    Log.d("TONUSER","NUM "+phoneNumber);
     final String TAG = "OTP";
     PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
@@ -162,7 +211,7 @@ public class RNFirebasePhoneAuthModule extends ReactContextBaseJavaModule {
         // The SMS verification code has been sent to the provided phone number, we
         // now need to ask the user to enter the code and then construct a credential
         // by combining the code with a verification ID.
-        //Log.d(TAG, "onCodeSent:" + verificationId);
+        Log.d(TAG, "onCodeSent:" + verificationId);
 
         // Save verification ID and resending token so we can use them later
         mVerificationId = verificationId;
@@ -171,7 +220,7 @@ public class RNFirebasePhoneAuthModule extends ReactContextBaseJavaModule {
 
         WritableMap params = Arguments.createMap();
         params.putString("CODE", "SENT");
-        params.putString("verificationId", verificationId);
+        params.putString("verificationId", ""+verificationId);
         sendEvent("OTPStatus", params);
 
 //                successCallback.invoke(params);

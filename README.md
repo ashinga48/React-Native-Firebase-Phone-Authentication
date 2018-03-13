@@ -1,9 +1,6 @@
+Update 15 Jan '18 :
 
-Update 15 Jan '18 : 
-
-#1 -- working on iOS module, latest will be updated soon..
-#2 -- will create a video tutorial for integration.
-
+## 1 -- working on iOS module, latest will be updated soon.. #2 -- will create a video tutorial for integration.
 
 
 # react-native-firebase-phone-auth
@@ -45,7 +42,7 @@ Update 15 Jan '18 :
 
 1. Import DeviceEventEmitter in react-native
 2. Import RNFirebasePhoneAuth from 'react-native-firebase-phone-auth'
-    
+
     ```javascript
     import {
         //...
@@ -62,8 +59,8 @@ Update 15 Jan '18 :
             from firebase console in the website
         */
         RNFirebasePhoneauth.initFirebase(
-            appId, 
-            projectId, 
+            appId,
+            projectId,
             appKey,
             databaseURL,
             (resp)=>{ console.log(resp) },
@@ -78,11 +75,11 @@ Update 15 Jan '18 :
              this.initFirebase(); // if needed
              this.listenToOTP();
          }
-     
+
          listenToOTP(){
-     
+
              DeviceEventEmitter.addListener('OTPStatus', (data) => {
-             
+
                  switch(data.CODE){
                     case "SENT":
                             //SMS Sent
@@ -94,26 +91,26 @@ Update 15 Jan '18 :
                                   verificationId : data.verificationId
                               }
                               firebase.auth().signInWithPhoneAuth(
-                                 authData, 
-                                 (success)=>{ 
+                                 authData,
+                                 (success)=>{
                                      //on Successful Login
-                                 }, 
-                                 (error)=>{ 
-                                     //on Error 
+                                 },
+                                 (error)=>{
+                                     //on Error
                                  });
                          break;
                     case "ERROR":
                             //error sending SMS
                         break;
                  }
-     
+
                  if(data.CODE == "ERROR")
                      {
                      }
-     
+
              });
-     
-     
+
+
          }
     ```
 
@@ -122,9 +119,9 @@ Update 15 Jan '18 :
         let phoneNumber = "+61412341234";
         RNFirebasePhoneauth.sendOTP(phoneNumber);
     ```
-    
+
     **That's it!!!**
-    
+
 // TODO: Android & iOS Firebase link
 RNFirebasePhoneAuth;
 
@@ -135,26 +132,26 @@ RNFirebasePhoneAuth;
 
     follow this link, it worked for me
     https://stackoverflow.com/questions/37310188/failed-to-resolve-com-google-firebasefirebase-core9-0-0
-  
+
 2 : Did you setup Firebase for Android & iOS properly??
-    
+
     https://support.google.com/firebase/answer/7000104?hl=en
-    
-    OR 
-    
+
+    OR
+
     - ANDROID issue #1 - Add firebase configuration file to the root of the project in android
         https://support.google.com/firebase/answer/7015592
 
     - ANDROID issue #2 - build.gradle config did run perfectly with this configuration
-    
+
         ```
         compileSdkVersion 25
             buildToolsVersion "25.0.2"
-        
+
             defaultConfig {
                 applicationId "com.ivu"
                 minSdkVersion 16
                 targetSdkVersion 26
-                
-                
+
+
     2. iOS

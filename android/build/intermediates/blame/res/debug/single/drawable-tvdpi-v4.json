@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_standard_off_client.png",
+        "source": "/Users/Ravi/.android/build-cache/519833e8818ee6941c4439bf6f0d05796c5f67f8/output/res/drawable-tvdpi-v4/ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_medium_off_client.png",
+        "source": "/Users/Ravi/.android/build-cache/519833e8818ee6941c4439bf6f0d05796c5f67f8/output/res/drawable-tvdpi-v4/ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_small_off_client.png",
+        "source": "/Users/Ravi/.android/build-cache/519833e8818ee6941c4439bf6f0d05796c5f67f8/output/res/drawable-tvdpi-v4/ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_tall_off_client.png",
+        "source": "/Users/Ravi/.android/build-cache/519833e8818ee6941c4439bf6f0d05796c5f67f8/output/res/drawable-tvdpi-v4/ic_plusone_tall_off_client.png"
+    }
+]

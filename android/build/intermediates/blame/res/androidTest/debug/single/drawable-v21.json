@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/Ravi/.android/build-cache/8a4822106104d24674345136e3ac5ab9904a426c/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/Ravi/.android/build-cache/8a4822106104d24674345136e3ac5ab9904a426c/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    }
+]

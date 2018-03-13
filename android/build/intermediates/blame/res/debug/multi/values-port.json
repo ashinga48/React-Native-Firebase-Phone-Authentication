@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/values-port/values-port.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 55,
+                        "endOffset": 331
+                    }
+                }
+            }
+        ]
+    }
+]

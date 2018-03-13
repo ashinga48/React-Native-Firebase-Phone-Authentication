@@ -1,20 +1,53 @@
-
 {
-  "name": "react-native-firebase-phone-auth",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_from": "react-native-firebase-phone-auth",
+  "_id": "react-native-firebase-phone-auth@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-9YZ8eiqMY1mbtVcYk0S6ohLtgVJRhZz2wJYXgwWZfyiHmEVdT/W1YjFbzuezdHi/uYfr/75mlkvC9XWCnvYhRg==",
+  "_location": "/react-native-firebase-phone-auth",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-firebase-phone-auth",
+    "name": "react-native-firebase-phone-auth",
+    "escapedName": "react-native-firebase-phone-auth",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-firebase-phone-auth/-/react-native-firebase-phone-auth-1.0.2.tgz",
+  "_shasum": "787e106b83f9c65813710f0d711407ad040f22a4",
+  "_spec": "react-native-firebase-phone-auth",
+  "_where": "/Users/touchon/Desktop/Touchon/NPMJS_GIT_RN_FB_PHONEAUTH",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ashinga48/React-Native-Firebase-Phone-Authentication/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Update 15 Jan '18 :",
+  "email": "kesanam.ravi@gmail.com",
+  "homepage": "https://github.com/ashinga48/React-Native-Firebase-Phone-Authentication#readme",
   "keywords": [
     "react-native"
   ],
-  "author": "",
   "license": "",
+  "main": "index.js",
+  "name": "react-native-firebase-phone-auth",
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
-
-  }
+    "react-native": "^0.41.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashinga48/React-Native-Firebase-Phone-Authentication.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "url": "http://github.com/ashinga48",
+  "version": "1.0.2"
 }

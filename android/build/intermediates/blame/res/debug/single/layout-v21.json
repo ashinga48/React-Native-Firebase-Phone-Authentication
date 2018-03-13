@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/Ravi/.android/build-cache/8a4822106104d24674345136e3ac5ab9904a426c/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/Ravi/.android/build-cache/8a4822106104d24674345136e3ac5ab9904a426c/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/Users/Ravi/.android/build-cache/001c035e5d4b295cd046c10dd83cfedd2547c3b8/output/res/layout-v21/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/Ravi/.android/build-cache/8a4822106104d24674345136e3ac5ab9904a426c/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/Ravi/.android/build-cache/8a4822106104d24674345136e3ac5ab9904a426c/output/res/layout-v21/notification_action.xml"
+    }
+]

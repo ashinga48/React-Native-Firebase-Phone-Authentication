@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/Ravi/.android/build-cache/57c8a8ea33e7f5d8b3e8de6010396022ef5d132e/output/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/Ravi/.android/build-cache/57c8a8ea33e7f5d8b3e8de6010396022ef5d132e/output/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/Ravi/.android/build-cache/57c8a8ea33e7f5d8b3e8de6010396022ef5d132e/output/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    }
+]

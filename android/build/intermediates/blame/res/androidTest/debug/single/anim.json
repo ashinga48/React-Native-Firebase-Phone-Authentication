@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/catalyst_push_up_out.xml",
+        "source": "/Users/Ravi/.android/build-cache/b54f03350006ca8b623ba2e00087d26c29c25dcf/output/res/anim/catalyst_push_up_out.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/abc_fade_out.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/fade_out.xml",
+        "source": "/Users/Ravi/.android/build-cache/b54f03350006ca8b623ba2e00087d26c29c25dcf/output/res/anim/fade_out.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/slide_down.xml",
+        "source": "/Users/Ravi/.android/build-cache/b54f03350006ca8b623ba2e00087d26c29c25dcf/output/res/anim/slide_down.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/fade_in.xml",
+        "source": "/Users/Ravi/.android/build-cache/b54f03350006ca8b623ba2e00087d26c29c25dcf/output/res/anim/fade_in.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/abc_fade_in.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/slide_up.xml",
+        "source": "/Users/Ravi/.android/build-cache/b54f03350006ca8b623ba2e00087d26c29c25dcf/output/res/anim/slide_up.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/Ravi/.android/build-cache/1eb72fe70ff68d0d6b352c87a900e3085c8cddcc/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/Ravi/Desktop/ravi/IVU/Dev/ivu/node_modules/react-native-firebase-phone-auth/android/build/intermediates/res/merged/androidTest/debug/anim/catalyst_push_up_in.xml",
+        "source": "/Users/Ravi/.android/build-cache/b54f03350006ca8b623ba2e00087d26c29c25dcf/output/res/anim/catalyst_push_up_in.xml"
+    }
+]
