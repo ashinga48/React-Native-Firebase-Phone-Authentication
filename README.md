@@ -1,6 +1,3 @@
-Update 15 Jan '18 :
-
-## 1 -- working on iOS module, latest will be updated soon.. #2 -- will create a video tutorial for integration.
 
 
 # react-native-firebase-phone-auth
